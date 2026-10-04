@@ -77,6 +77,42 @@ body{font-family:"DM Sans",sans-serif;overflow:hidden;background:var(--black)}
 function gkExplore(){alert("Explore section will be connected in the next part.")}
 </script>
 <!-- // GADEKAR HOSPITAL — HOME — PART 1 — END -->
+
+ <!-- // GADEKAR HOSPITAL — HOME EXTRA CONTENT BLOCK — START -->
+<style>
+/* Keep Home as a single full-screen screen */
+html,body{
+ margin:0!important;
+ padding:0!important;
+ width:100%!important;
+ height:100%!important;
+ overflow:hidden!important;
+}
+#gkHome{
+ width:100%!important;
+ height:100vh!important;
+ min-height:100vh!important;
+ max-height:100vh!important;
+ overflow:hidden!important;
+}
+</style>
+<script>
+(function(){
+ function gkFixHomeScreen(){
+ const home=document.getElementById("gkHome");
+ if(!home)return;
+ home.style.width="100%";
+ home.style.height="100vh";
+ home.style.minHeight="100vh";
+ home.style.maxHeight="100vh";
+ home.style.overflow="hidden";
+ }
+ gkFixHomeScreen();
+ window.addEventListener("resize",gkFixHomeScreen);
+})();
+</script>
+<!-- // GADEKAR HOSPITAL — HOME EXTRA CONTENT BLOCK — END -->
+ 
  <!-- // GADEKAR HOSPITAL — EXPLORE BUTTON ACTIVE — PART 2A — START -->
 <style>
 #gkExplorePage{position:fixed;inset:0;z-index:100;display:none;overflow:auto;background:#202b2d;color:#eef4f3}
